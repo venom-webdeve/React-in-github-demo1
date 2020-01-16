@@ -1,0 +1,43 @@
+<div class="container">
+    <h2>Register Product</h2>
+    <form [formGroup]="frmRegister">
+<fieldset>
+<legend>Basic Details</legend>
+<dl>
+<dt>Name</dt>
+<dd><input type="text" formControlName="name" class="form-control">  
+</dd>
+<dt>Price</dt>
+<dd>
+    <input type="text" formControlName="price" class="form-control" >
+</dd>
+</dl>
+</fieldset>
+<div [formGroupName]="frmDetails">
+<fieldset style="background-color: aqua;">
+<legend>Stock Details</legend>
+<dl>
+    <dt>Shipped To</dt>
+    <dd>
+        <select class="form-control" formControlName="city" >
+        <option>Delhi</option>
+        <option>HYD</option>
+        </select>
+    </dd>
+</dl>
+</fieldset>
+<br>
+<button (click)="updateDetails()" class="btn btn-primary">
+    updateDetails
+</button>
+</div>
+    </form>
+    <br>
+    Name:{{frmRegister.value.name}}
+    <br>
+    Price:{{frmRegister.value.price}}
+    <br>
+    City:{{frmRegister.value.frmDetails.city}}
+    <br>
+    IsInStock:{{(frmRegister.value.frmDetails.IsInStock==true)?"Avilable":"Out of Stock"}}
+</div>

@@ -1,0 +1,56 @@
+
+<div class="container">
+    <h2 class="text-primary">Register Producte</h2>
+    <dl>
+        <dt>Name:</dt>
+        <dd><input type="text" class="form-control" [(ngModel)]="name"></dd>
+        <dt>Price:</dt>
+        <dd><input type="text" class="form-control" [(ngModel)]="price"></dd>
+        <dt>Stock Status:</dt>
+        <dd><input type="radio" name="stock" value="Available" [(ngModel)]="instock">Yes</dd>
+        <dd><input type="radio" name="stock" value="out of stock" [(ngModel)]="instock">No</dd>
+        <dt>ShippedTo:</dt>
+        <select class="form-control align-self-auto" [(ngModel)]="Shippedto" >
+            <option>
+            <h3>Delhi</h3>
+            </option>
+            <option>
+                <h3>HYD</h3>
+                </option>
+                <option>
+                    <h3>BPL</h3>
+                    </option>
+        </select>
+    </dl>
+</div>
+<div class="container">
+    <h2>Producte Detailes</h2>
+    <dl>
+    <dt>Name:</dt>
+    <dd>{{name}}</dd>
+    <dt>Price:</dt>
+    <dd>{{price}}</dd>
+    <dt>Stock status:</dt>
+    <dd>{{instock}}</dd>
+    <dt>ShippedTo:</dt>
+    <dd>{{Shippedto}}</dd>
+    </dl>
+
+</div>
+<!-- 
+<body>
+<h2>Producte</h2>
+<dl>
+<dt>Name:</dt>
+<dd><input type="text" value="{{product.name}}"></dd>
+<dt>Price:</dt>
+<dd>{{product.Price}}</dd>
+<dt>Quantity:</dt>
+<dd>{{product.QTY}}</dd>
+<dt>Manufactured:</dt>
+<dd>{{product.MFD.toLocaleDateString()}}</dd>
+<dt>Stock status:</dt>
+<dd>{{(product.instock==true)?"Available":"out of Stock"}}</dd>
+<dt>Total:</dt>
+<dd>{{Total()}}</dd></dl>
+</body> --> 

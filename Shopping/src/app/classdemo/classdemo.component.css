@@ -1,0 +1,11 @@
+.textEffects{
+    color: aqua;
+}
+
+.backEffects{
+    background-color: darkcyan;
+    color: white;
+}
+.border-Effects{
+    border: 2px dotted blueviolet;
+}

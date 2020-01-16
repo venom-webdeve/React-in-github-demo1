@@ -1,0 +1,15 @@
+.addProduct{
+    width: 300px;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.odd{
+background-color: darkcyan;
+
+}
+.even{
+    background-color: lightseagreen;
+}

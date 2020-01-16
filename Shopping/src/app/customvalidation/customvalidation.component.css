@@ -1,0 +1,7 @@
+.errorStyle{
+    border: 1px solid red;
+}
+
+.validStyle{
+    border: 1px solid green;
+}

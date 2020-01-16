@@ -1,0 +1,9 @@
+<fieldset>
+<legend>Selecte a Category
+</legend>
+<input (change)="RadioChanged()" [(ngModel)]="SelectedCategoryValue" type="radio" name="category" value="All" >All [{{AllCount}}]
+<input (change)="RadioChanged()" [(ngModel)]="SelectedCategoryValue" type="radio" name="category" value="Electronices" >Electronices [{{ElectronicesCount}}]
+<input (change)="RadioChanged()" [(ngModel)]="SelectedCategoryValue" type="radio" name="category" value="Shoes" >Shoes [{{ShoesCount}}]
+<input (change)="RadioChanged()" [(ngModel)]="SelectedCategoryValue" type="radio" name="category" value="Books" >Books [{{BooksCount}}]
+
+</fieldset>

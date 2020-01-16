@@ -1,0 +1,9 @@
+<fieldset>
+    <legend>Selecte a Category
+    </legend>
+    <input (change)="CheckBoxChecked()" [(ngModel)]="IsAllSelected"    type="checkbox"  value="All" >All
+    <input (change)="CheckBoxChecked()" [(ngModel)]="IsElectronicesSelected" type="checkbox"  value="Electronices" >Electronices
+    <input (change)="CheckBoxChecked()" [(ngModel)]="IsShoesSelected" type="checkbox"  value="Shoes" >Shoes
+    <input (change)="CheckBoxChecked()" [(ngModel)]="IsBooksSlected" type="checkbox" value="Books" >Books
+    
+    </fieldset>

@@ -1,0 +1,33 @@
+<div class="container">
+    <form #frmRegister="ngForm" name="frmRegister" novalidate>
+        <h2>Register</h2>
+        <div class="form-group">
+            <label>Selected your City</label>
+            <select [ngClass]="{errorStyle:errorclass, validStyle:validclass}"
+                (change)="SelectedCityChanged(lstCities.value)" class="form-control" name="lstCities"
+                #lstCities="ngModel" ngModel>
+
+                <option value="nocity">Select a City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="HYD">HYD</option>
+                <option value="Bhopal">Bhopal</option>
+            </select>
+            <span *ngIf="showCityError" class="text-danger">Please select a city</span>
+        </div>
+        <div class="form-group">
+            <label>Enter Even Number</label>
+            <div>
+                <input (blur)="verifyEvenNumber(txtEven.value)" name="txtEven" #txtEven="ngModel" ngModel
+                    class="form-control" type="text">
+                <span *ngIf="showEvenError" class="text-danger">Not a Even Number</span>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" (blur)="verifyEmail(txtEmail.value)" name="txtEmail" #txtEmail="ngModel" ngModel
+                    class="form-control">
+                <span class="text-danger" *ngIf="showEmailError">Invalid Email</span>
+            </div>
+        </div>
+    </form>
+
+</div>

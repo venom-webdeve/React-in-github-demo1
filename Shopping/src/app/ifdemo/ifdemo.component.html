@@ -1,0 +1,19 @@
+<div class="container">
+        <div>
+<h2>friends details</h2>
+<ol>
+        <li *ngFor="let don of frnd">{{don}}</li>
+</ol>
+        </div>
+<h2>Products Details</h2>
+<dl>
+<dt>Name:</dt>
+<dd>{{prods.names}}</dd>
+<dt>Price:</dt>
+<dd>{{prods.prices}}</dd>
+<dt><button (click)="DisplayClick()" class="btn btn-primary">Preview{{btnText}}</button></dt>
+<dd><div *ngIf="isVisible" >
+<img [src]="prods.photos" width="200" height="200" class="img-thumbnail">
+</div></dd>
+</dl>
+</div>
