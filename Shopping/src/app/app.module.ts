@@ -35,6 +35,11 @@ import { CustomvalidationComponent } from './customvalidation/customvalidation.c
 import { DynamicvalidationComponent } from './dynamicvalidation/dynamicvalidation.component';
 import { ReactivedemoComponent } from './reactivedemo/reactivedemo.component';
 import { NestedformComponent } from './nestedform/nestedform.component';
+import { UserrestdemoComponent } from './userrestdemo/userrestdemo.component';
+import {HttpClientModule} from '@angular/common/http'
+import { RestapicallService } from './restapicall.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,14 +74,16 @@ import { NestedformComponent } from './nestedform/nestedform.component';
     CustomvalidationComponent,
     DynamicvalidationComponent,
     ReactivedemoComponent,
-    NestedformComponent
+    NestedformComponent,
+    UserrestdemoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [NestedformComponent]
+  providers: [RestapicallService],
+  bootstrap: [UserrestdemoComponent]
 })
 export class AppModule { }
