@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 class="text-center text-dark">Routing demo</h2>
+    <div class="btn-toolbar bg-primary justify-content-between text-white">
+        <div class="btn-group">
+            <a routerLink="home" class="btn btn-primary">Home</a>
+            <a routerLink="hr" class="btn btn-primary">HrHelpDesk</a>
+            <a routerLink="learning" class="btn btn-primary">Learning</a>
+            <a routerLink="payroll" class="btn btn-primary">Payroll</a>
+            <a routerLink="profile" class="btn btn-primary">Profile</a>
+        </div>
+        <div class="btn-group">
+            <div class="form-inline">
+                <input type="text" class="form-control">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </div>
+    <div style="height: 300px; margin-top:20px;">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="bg-primary text-center text-white">
+        &copy;Copyright 2020
+    </div>
+</div>
