@@ -7,6 +7,7 @@ import { HrhelpdeskComponent } from './hrhelpdesk/hrhelpdesk.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LearningComponent } from './learning/learning.component';
 import { PayrollComponent } from './payroll/payroll.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PayrollComponent } from './payroll/payroll.component';
     ProfileComponent,
     LearningComponent,
     PayrollComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
