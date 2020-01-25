@@ -7,6 +7,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { HrhelpdeskComponent } from './hrhelpdesk/hrhelpdesk.component';
 import { LearningComponent } from './learning/learning.component';
 import { PayrollComponent } from './payroll/payroll.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { CategorieslistComponent } from './categorieslist/categorieslist.component';
+import { ProductslistComponent } from './productslist/productslist.component';
 
 
 const routes: Routes = [
@@ -16,7 +19,10 @@ const routes: Routes = [
   {path:"hr", component:HrhelpdeskComponent},
   {path:"learning", component:LearningComponent},
   {path:"payroll", component:PayrollComponent},
-  {path:"search/:id/:name/:price", component:SearchComponent}
+  {path:"search/:id/:name/:price", component:SearchComponent},
+  {path:"categories", component:CategorieslistComponent},
+  {path:"categories/:id", component:ProductslistComponent},
+  {path:"**",component:NotfoundComponent}
 ];
 
 @NgModule({

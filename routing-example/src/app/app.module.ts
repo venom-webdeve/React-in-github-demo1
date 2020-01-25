@@ -8,6 +8,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { LearningComponent } from './learning/learning.component';
 import { PayrollComponent } from './payroll/payroll.component';
 import { SearchComponent } from './search/search.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { CategorieslistComponent } from './categorieslist/categorieslist.component';
+import { ProductslistComponent } from './productslist/productslist.component';
+import {DataService}from './data.service';
 
 @NgModule({
   declarations: [
@@ -17,13 +21,16 @@ import { SearchComponent } from './search/search.component';
     LearningComponent,
     PayrollComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    NotfoundComponent,
+    CategorieslistComponent,
+    ProductslistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

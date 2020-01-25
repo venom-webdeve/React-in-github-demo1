@@ -1,0 +1,8 @@
+<div class="container">
+    <h2>Categories List</h2>
+    <ol>
+        <li *ngFor="let item of categories">
+        <!-- <a routerLink="{{item.categoryId}}">{{item.categoryName}}</a></li> -->
+        <button (click)="categoryClick(item)" class="btn btn-link">{{item.categoryName}}</button></li>
+    </ol>
+</div>
