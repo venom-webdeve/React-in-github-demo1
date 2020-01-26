@@ -1,7 +1,14 @@
+<div class="container">
 <h2>Product List</h2>
 <ol>
     <li *ngFor="let item of products">
-
-    {{item.name}}-{{item.price}}
+<!-- 
+    {{item.name}}-{{item.price}} -->
+    <button (click)="getDetails(item)" class="btn btn-link">{{item.name}}</button>
 </li>
 </ol>
+</div>
+<div class="container">
+    <h2>Product Details</h2>
+    <router-outlet></router-outlet>
+</div>

@@ -10,6 +10,7 @@ import { PayrollComponent } from './payroll/payroll.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { CategorieslistComponent } from './categorieslist/categorieslist.component';
 import { ProductslistComponent } from './productslist/productslist.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,9 @@ const routes: Routes = [
   {path:"payroll", component:PayrollComponent},
   {path:"search/:id/:name/:price", component:SearchComponent},
   {path:"categories", component:CategorieslistComponent},
-  {path:"categories/:id", component:ProductslistComponent},
+  {path:"categories/:id", component:ProductslistComponent,
+children:[{path:"details/:id",component:ProductsdetailsComponent}]
+                                },
   {path:"**",component:NotfoundComponent}
 ];
 

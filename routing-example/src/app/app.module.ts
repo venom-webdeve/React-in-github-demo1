@@ -12,6 +12,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { CategorieslistComponent } from './categorieslist/categorieslist.component';
 import { ProductslistComponent } from './productslist/productslist.component';
 import {DataService}from './data.service';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {DataService}from './data.service';
     SearchComponent,
     NotfoundComponent,
     CategorieslistComponent,
-    ProductslistComponent
+    ProductslistComponent,
+    ProductsdetailsComponent
   ],
   imports: [
     BrowserModule,
