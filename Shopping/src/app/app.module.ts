@@ -84,6 +84,6 @@ import { RestapicallService } from './restapicall.service';
     HttpClientModule
   ],
   providers: [RestapicallService],
-  bootstrap: [UserrestdemoComponent]
+  bootstrap: [KeydemoComponent]
 })
 export class AppModule { }

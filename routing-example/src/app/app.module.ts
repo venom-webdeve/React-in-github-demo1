@@ -13,6 +13,10 @@ import { CategorieslistComponent } from './categorieslist/categorieslist.compone
 import { ProductslistComponent } from './productslist/productslist.component';
 import {DataService}from './data.service';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
+import { ApidataService}from './apidata.service';
+import { HttpClientModule } from '@angular/common/http';
+import { DemoproComponent } from './demopro/demopro.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +30,16 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     NotfoundComponent,
     CategorieslistComponent,
     ProductslistComponent,
-    ProductsdetailsComponent
+    ProductsdetailsComponent,
+    DemoproComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [DataService],
-  bootstrap: [AppComponent]
+  providers: [DataService,ApidataService],
+  bootstrap: [DemoproComponent]
 })
 export class AppModule { }
