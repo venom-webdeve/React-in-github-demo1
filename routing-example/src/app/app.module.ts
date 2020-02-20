@@ -17,6 +17,8 @@ import { ApidataService}from './apidata.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DemoproComponent } from './demopro/demopro.component';
 import {FormsModule} from '@angular/forms';
+import { NewproductdemoComponent } from './newproductdemo/newproductdemo.component';
+import {NewproapiService} from './newproapi.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import {FormsModule} from '@angular/forms';
     CategorieslistComponent,
     ProductslistComponent,
     ProductsdetailsComponent,
-    DemoproComponent
+    DemoproComponent,
+    NewproductdemoComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import {FormsModule} from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [DataService,ApidataService],
-  bootstrap: [DemoproComponent]
+  providers: [DataService,ApidataService,NewproapiService],
+  bootstrap: [NewproductdemoComponent]
 })
 export class AppModule { }
